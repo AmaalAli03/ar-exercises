@@ -25,7 +25,7 @@ store6 = Store.create(name: "Yaletown", annual_revenue:430000,  mens_apparel: tr
 # for women in @womens_stores
 #   puts women.name, women.annual_revenue
 # end
-@womens_stores = Store.having('(annual_revenue) < 1000000').group('id')
+ @womens_stores = Store.having('(annual_revenue) < 1000000').group('id')
 
 for women in @womens_stores
   puts women.name, women.annual_revenue
