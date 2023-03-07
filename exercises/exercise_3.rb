@@ -8,8 +8,8 @@ puts "----------"
 # Your code goes here ...
 def update 
 
-  @store3 = Store.find_by(id: 1)
-  @store3.update(name:"Philly")
+  @store3 = Store.find_by(id: 3)
+  @store3.destroy
   pp @store3
 end
 update()
